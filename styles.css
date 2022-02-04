@@ -1,0 +1,89 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+input, button {
+    font-family: inherit;
+}
+
+h1, h2, h3, h4 {
+    margin: 1.2rem 0;
+}
+
+h4 {
+    margin: 0 0 .5em;
+}
+
+button, .btn {
+    padding: .5em 1em;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    width: fit-content;
+    border-radius: .2em;
+    border: none;
+    transition: .2s linear background-color, 
+                .2s linear color;
+}
+input[type="text"], input[type="date"], input[type="email"] {
+    border-color: black;
+    width: fit-content;
+    background-color: white;
+    border-radius: .2em;
+    height: 0;
+    padding: 1.2em;
+}
+input[type="file"] {
+    display: none;
+    /* opacity: 0; */
+}
+
+.normal-btn {
+    margin: 1em 0;
+    background-color: rgb(26, 26, 147);
+    color: white;
+}
+.normal-btn:hover, .normal-btn:focus {
+    background-color: rgb(26, 26, 187);
+}
+.normal-outline-btn {
+    background-color: transparent;
+    border: 1px solid rgb(26, 26, 147);
+    color: rgb(26, 26, 147);
+}
+.normal-outline-btn:hover, .normal-outline-btn:focus {
+    background-color: rgb(26, 26, 147);
+    color: white;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 1em;
+    align-items: center;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    display: flex;
+    gap: 5em;
+    margin: 1em 2em;
+}
+
+.horizontal-center {
+    justify-content: center;
+}
+
+.csv-form button, .csv-form .btn {
+    margin: 0;
+}

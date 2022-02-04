@@ -1,0 +1,39 @@
+.notification {
+    display: flex;
+    padding: 1.5em 1em;
+    width: 20em;
+    position: fixed;
+    top: 1em;
+    left: 40%;
+    border-radius: .5em;
+    align-items: center;
+    box-shadow: 0 .5em 1em hsla(0, 0%, 0%, 0.116);
+    transition: .1s linear background-color,
+                200ms linear opacity;
+}
+
+.notification.success {
+    background-color: #d4edda;
+    color: #155724;
+    border-color: #c3e6cb;
+}
+.notification.success:hover {
+    background-color: #a3b6a7;
+}
+
+.notification.failure {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+.notification.failure:hover {
+    background-color: #bea3a6;
+}
+
+.cancel-btn {
+    margin-left: auto;
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
+    font-size: 1.5rem;
+}
